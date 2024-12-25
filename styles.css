@@ -12,9 +12,9 @@ body {
   }
   
   .logo {
-    width: 520px;
+    width: 530px;
     margin-bottom: 15px;
-    border-radius: 50px 20px;
+    border-radius: 50px 30px;
   }
   
   .festive-title {
@@ -38,6 +38,20 @@ body {
   .contact-form {
     background: linear-gradient(to bottom, #820300);
     padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #hidden-message .card {
+    background: linear-gradient(to bottom, #47663B, #820300);
     border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #countdown-timer {
+    background: linear-gradient(to bottom, #820300);
+    padding: 15px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
