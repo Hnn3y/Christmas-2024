@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #47663B, #820300);
+    color: black;
+    text-align: center;
+  }
+  
+  .festive-banner {
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .logo {
+    width: 520px;
+    margin-bottom: 15px;
+    border-radius: 50px 20px;
+  }
+  
+  .festive-title {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+  }
+  
+  button {
+    transition: transform 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  
+  .contact-form {
+    background: linear-gradient(to bottom, #820300);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
