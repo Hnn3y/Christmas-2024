@@ -11,42 +11,45 @@
 </head>
 <body>
   <header class="text-center py-4 festive-banner">
-    <img src="./Image/jamie-street-fRT-ZkJTAbg-unsplash.jpg" alt="Logo" class="logo">
+    <img src="./Image/jamie-street-fRT-ZkJTAbg-unsplash.jpg" alt="Logo" class="logo img-fluid">
     <h1 class="display-4 festive-title">Merry Christmas</h1>
   </header>
 
   <main class="holiday-content text-center py-5">
-    <p class="lead festive-title">Wishing you a season filled with joy, love, and laughter.<br> Celebrate with us!</p>
-    <button id="reveal-button" class="btn btn-primary btn-lg mb-2">Reveal Message</button>
-    <div id="hidden-message" class="mt-5 d-none">
-      <div class="card p-4 shadow-lg">
-        <h2 class="display-5">Merry Christmas!</h2>
-        <h2 class="display-5">And Happy New Year in Advance!</h2>
-        <p class="lead">Countdown to New Year:</p>
-        <div id="countdown-timer" class="display-4"></div>
+    <div class="container">
+      <button id="reveal-button" class="shadow__btn btn btn-primary btn-lg mb-4">Reveal Message</button>
+      <div id="hidden-message" class="mt-5 d-none">
+        <div class="card p-4 shadow-lg festive-card">
+          <h1 class="display-4 festive-title">Merry Christmas</h1>
+          <p class="lead festive-title">Wishing you a season filled with joy, love, and laughter.<br> Celebrate with us!</p>
+          <h2 class="display-5 festive-title">And Happy New Year in Advance!</h2>
+          <p class="lead">Join us in celebrating the joy of a new season</p>
+          <p class="lead">Countdown to New Year:</p>
+          <div id="countdown-timer" class="display-4"></div>
+        </div>
       </div>
-    </div>
-    <div class="contact-form mt-5">
-      <h2 class="display-6 festive-title">Send Us Your Christmas Wishes</h2>
-      <form id="message-form" class="w-50 mx-auto mt-3" action="https://formspree.io/f/mnnnjnqy" method="POST">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" name="name" required>
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" name="_replyto" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Send Message</button>
-      </form>
+      <div class="contact-form mt-5">
+        <h2 class="display-6 festive-title">Send Us Your Christmas Wishes</h2>
+        <form id="message-form" class="w-100 mx-auto mt-3" action="https://formspree.io/f/mnnnjnqy" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="_replyto" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Send Message</button>
+        </form>
+      </div>
     </div>
   </main>
 
-  <footer class="text-start py-3 px-3 bg-dark text-light">
+  <footer class="text-start py-3 px-2 bg-dark text-light">
     <p class="mb-0">Made with ❤️ by Henney</p>
   </footer>
 

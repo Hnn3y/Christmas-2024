@@ -1,57 +1,130 @@
 body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #47663B, #820300);
-    color: black;
-    text-align: center;
-  }
-  
-  .festive-banner {
-    color: white;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  }
-  
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f7e7ce;  
+  color: #333;
+  text-align: center;
+}
+
+.festive-banner {
+  background: #3c763d; /* Green background for the header */
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+}
+
+.logo {
+  width: 520px;
+  margin-bottom: 15px;
+  border-radius: 40px 90px;
+}
+
+.festive-title {
+  font-family: 'Lobster', cursive;
+  font-size: 2.5rem;
+  color: #d4af37; /* Gold color for the festive title */
+}
+
+footer {
+  background-color: #f7e7ce;
+  color: #f7e7ce;
+}
+
+.contact-form {
+  background: #f7e7ce;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#hidden-message {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#hidden-message.show {
+  opacity: 1;
+}
+
+#hidden-message .card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(0.9);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+#hidden-message .card:hover {
+  transform: scale(1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#countdown-timer {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
   .logo {
-    width: 530px;
-    margin-bottom: 15px;
-    border-radius: 50px 30px;
+    width: 100px;
   }
   
   .festive-title {
-    font-family: 'Lobster', cursive;
-    font-size: 3rem;
-  }
-  
-  button {
-    transition: transform 0.2s;
-  }
-  
-  button:hover {
-    transform: scale(1.1);
-  }
-  
-  footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: white;
+    font-size: 2rem;
   }
   
   .contact-form {
-    background: linear-gradient(to bottom, #820300);
-    padding: 20px;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
   }
   
   #hidden-message .card {
-    background: linear-gradient(to bottom, #47663B, #820300);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    width: 80px;
   }
   
-  #countdown-timer {
-    background: linear-gradient(to bottom, #820300);
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .festive-title {
+    font-size: 1.5rem;
   }
+  
+  .contact-form {
+    padding: 10px;
+  }
+  
+  #hidden-message .card {
+    padding: 10px;
+  }
+}
+
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow, background-color;
+  background: #d4af37;
+  box-shadow: 0 0 25px #d4af37;
+}
+
+.shadow__btn:hover,
+.shadow__btn:focus,
+.shadow__btn:active {
+  box-shadow: 0 0 5px rgb(222, 211, 13),
+              0 0 25px rgb(222, 211, 13),
+              0 0 50px rgb(222, 211, 13),
+              0 0 100px rgb(222, 211, 13);
+  background-color: #d4af37; /* Ensure the background color stays the same */
+  outline: none; /* Remove default outline */
+}
